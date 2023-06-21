@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: |
-        docker pull rabbitmq:3.12.0-management
+        docker pull rabbitmq:3.9.22-management
         docker login --username=kingpanaxi -p "3exWp5ninMaEcr2T" registry.cn-beijing.aliyuncs.com
-        docker tag rabbitmq:3.12.0-management registry.cn-beijing.aliyuncs.com/firesoulx/rabbitmq:3.12.0-management
-        docker push registry.cn-beijing.aliyuncs.com/firesoulx/rabbitmq:3.12.0-management
+        docker tag rabbitmq:3.9.22-management registry.cn-beijing.aliyuncs.com/firesoulx/rabbitmq:3.9.22-management
+        docker push registry.cn-beijing.aliyuncs.com/firesoulx/rabbitmq:3.9.22-management
