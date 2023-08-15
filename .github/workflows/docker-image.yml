@@ -18,5 +18,5 @@ jobs:
       run: |
         docker pull registry.k8s.io/sig-storage/nfsplugin:v4.4.0
         docker login --username=kingpanaxi -p "3exWp5ninMaEcr2T" registry.cn-beijing.aliyuncs.com
-        docker tag rabbitmq:3.9.22-management registry.cn-beijing.aliyuncs.com/firesoulx/nfsplugin:v4.4.0
+        docker tag registry.k8s.io/sig-storage/nfsplugin:v4.4.0 registry.cn-beijing.aliyuncs.com/firesoulx/nfsplugin:v4.4.0
         docker push registry.cn-beijing.aliyuncs.com/firesoulx/nfsplugin:v4.4.0
